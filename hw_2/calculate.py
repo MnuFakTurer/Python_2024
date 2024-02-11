@@ -49,7 +49,9 @@ try:
             for four in range(len(random_list)):
                 if four % 3 == 0:
                     elements_with_indices *= random_list[four]
-            print(f"Product of element divisible by 3: {elements_with_indices}")
+            print(
+                f"Product of element divisible by 3: {elements_with_indices}"
+            )
 
         elif action == 5:
 
@@ -85,7 +87,9 @@ try:
                 and first_positive_element < last_positive_element
             ):
                 sum_positive = 0
-                for six in range(first_positive_element + 1, last_positive_element):
+                for six in range(
+                    first_positive_element + 1, last_positive_element
+                ):
                     sum_positive += random_list[six]
                 print(f"Sum element: {sum_positive}")
             else:
